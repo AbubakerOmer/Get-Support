@@ -1,0 +1,16 @@
+l{% load static %}
+<html>
+    <HEAD>
+    <TITLE>TEACHERS</TITLE>
+
+    </HEAD>
+    <BODY>
+        <H1> TEACHERS</H1>
+        <table border = "5">
+            <tr><td>name</td><td>course</td><td>price</td><td>description</td></tr>
+            {% for teacher in teachers %}
+            <tr><td>{{teacher.name}}</td><td>{{teacher.course}}</td><td>{{teacher.price}}</td><td>{{teacher.discription}}</td></tr>
+            {% endfor %}
+        </table>
+    </BODY>
+</html>
